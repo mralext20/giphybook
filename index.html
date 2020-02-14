@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="bg-dark container-fluid text-light  text-center">
+        <p> giphybook!</p>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form class="form-inline" onsubmit="app.giphy.search(event)">
+                    <div class="form-group">
+                        <input type="text" name="query" id="textinput" class="form-control flex-grow-1">
+                        <button class="btn btn-success" id="formSubmit" type="submit">Search</button>
+                    </div>
+                </form>
+                <div class="row" id="apiGifs">
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row" id="myGifs"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+        integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+
+    <script src="app/main.js" type="module"></script>
+    <script>
+        let formbox = document.getElementById("textinput")
+        let submit = document.getElementById("formSubmit")
+    </script>
+</body>
+
+</html>
